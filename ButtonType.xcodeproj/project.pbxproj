@@ -13,6 +13,10 @@
 		A1353638233A640E00E86ED8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1353637233A640E00E86ED8 /* Assets.xcassets */; };
 		A135363B233A640E00E86ED8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1353639233A640E00E86ED8 /* LaunchScreen.storyboard */; };
 		A135363E233A640E00E86ED8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A135363D233A640E00E86ED8 /* main.m */; };
+		A136966D233B9610008FE452 /* MYButtonHV.m in Sources */ = {isa = PBXBuildFile; fileRef = A136966C233B9610008FE452 /* MYButtonHV.m */; };
+		A1369673233BAFC8008FE452 /* UIButton+Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = A1369672233BAFC8008FE452 /* UIButton+Orientation.m */; };
+		A1370075233CF44F00026BBC /* MYButtonV.m in Sources */ = {isa = PBXBuildFile; fileRef = A1370074233CF44F00026BBC /* MYButtonV.m */; };
+		A1725678233D104B00086DE6 /* ButtonContentRect.m in Sources */ = {isa = PBXBuildFile; fileRef = A1725677233D104B00086DE6 /* ButtonContentRect.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,14 @@
 		A135363A233A640E00E86ED8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A135363C233A640E00E86ED8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A135363D233A640E00E86ED8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A136966C233B9610008FE452 /* MYButtonHV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYButtonHV.m; sourceTree = "<group>"; };
+		A1369671233BAFC8008FE452 /* UIButton+Orientation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+Orientation.h"; sourceTree = "<group>"; };
+		A1369672233BAFC8008FE452 /* UIButton+Orientation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Orientation.m"; sourceTree = "<group>"; };
+		A1369676233BBDBB008FE452 /* MYButtonHV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYButtonHV.h; sourceTree = "<group>"; };
+		A1370073233CF44F00026BBC /* MYButtonV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYButtonV.h; sourceTree = "<group>"; };
+		A1370074233CF44F00026BBC /* MYButtonV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYButtonV.m; sourceTree = "<group>"; };
+		A1725676233D104B00086DE6 /* ButtonContentRect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ButtonContentRect.h; sourceTree = "<group>"; };
+		A1725677233D104B00086DE6 /* ButtonContentRect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ButtonContentRect.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +79,14 @@
 				A1353639233A640E00E86ED8 /* LaunchScreen.storyboard */,
 				A135363C233A640E00E86ED8 /* Info.plist */,
 				A135363D233A640E00E86ED8 /* main.m */,
+				A1369676233BBDBB008FE452 /* MYButtonHV.h */,
+				A136966C233B9610008FE452 /* MYButtonHV.m */,
+				A1369671233BAFC8008FE452 /* UIButton+Orientation.h */,
+				A1369672233BAFC8008FE452 /* UIButton+Orientation.m */,
+				A1370073233CF44F00026BBC /* MYButtonV.h */,
+				A1370074233CF44F00026BBC /* MYButtonV.m */,
+				A1725676233D104B00086DE6 /* ButtonContentRect.h */,
+				A1725677233D104B00086DE6 /* ButtonContentRect.m */,
 			);
 			path = ButtonType;
 			sourceTree = "<group>";
@@ -141,9 +161,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1369673233BAFC8008FE452 /* UIButton+Orientation.m in Sources */,
 				A1353633233A640D00E86ED8 /* ViewController.m in Sources */,
+				A1725678233D104B00086DE6 /* ButtonContentRect.m in Sources */,
 				A135363E233A640E00E86ED8 /* main.m in Sources */,
 				A1353630233A640D00E86ED8 /* AppDelegate.m in Sources */,
+				A1370075233CF44F00026BBC /* MYButtonV.m in Sources */,
+				A136966D233B9610008FE452 /* MYButtonHV.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
