@@ -36,31 +36,30 @@
     //图右字左
 //    CGFloat imgWidth = btn.imageView.bounds.size.width;
 //    CGFloat labWidth = btn.titleLabel.bounds.size.width;
-//    [btn setImageEdgeInsets:UIEdgeInsetsMake(0, labWidth, 0, -labWidth)];
 //    [btn setTitleEdgeInsets:UIEdgeInsetsMake(0, -imgWidth, 0, imgWidth)];
+//    [btn setImageEdgeInsets:UIEdgeInsetsMake(0, labWidth, 0, -labWidth)];
     
     //图上字下
 //    CGFloat imgWidth = btn.imageView.bounds.size.width;
 //    CGFloat imgHeight = btn.imageView.bounds.size.height;
 //    CGFloat labWidth = btn.titleLabel.bounds.size.width;
 //    CGFloat labHeight = btn.titleLabel.bounds.size.height;
-//    [btn setImageEdgeInsets:UIEdgeInsetsMake(-labHeight, 0, 0, -labWidth)];
 //    [btn setTitleEdgeInsets:UIEdgeInsetsMake(0, -imgWidth, -imgHeight, 0)];
+//    [btn setImageEdgeInsets:UIEdgeInsetsMake(-labHeight, 0, 0, -labWidth)];
     
     //图下字上
     CGFloat imgWidth = btn.imageView.bounds.size.width;
     CGFloat imgHeight = btn.imageView.bounds.size.height;
     CGFloat labWidth = btn.titleLabel.bounds.size.width;
     CGFloat labHeight = btn.titleLabel.bounds.size.height;
-    [btn setImageEdgeInsets:UIEdgeInsetsMake(labHeight, 0, 0, -labWidth)];
     [btn setTitleEdgeInsets:UIEdgeInsetsMake(0, -imgWidth, imgHeight, 0)];
-    
+    [btn setImageEdgeInsets:UIEdgeInsetsMake(labHeight, 0, 0, -labWidth)];
     
     
     [self.view addSubview:btn];
     
     MYButtonHV *myBtn = [MYButtonHV buttonWithType:UIButtonTypeCustom];
-    [myBtn setTitle:@"按钮" forState:UIControlStateNormal];
+    [myBtn setTitle:@"按钮2" forState:UIControlStateNormal];
     [myBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [myBtn setImage:[UIImage imageNamed:@"seting"] forState:UIControlStateNormal];
     myBtn.backgroundColor = [UIColor blueColor];
@@ -78,7 +77,7 @@
     myBtn.frame = CGRectMake(0, 180, 80, 50);
     
     UIButton *btn2 = [UIButton buttonWithType:UIButtonTypeCustom];
-    [btn2 setTitle:@"按钮" forState:UIControlStateNormal];
+    [btn2 setTitle:@"按钮3" forState:UIControlStateNormal];
     [btn2 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [btn2 setImage:[UIImage imageNamed:@"seting"] forState:UIControlStateNormal];
     btn2.backgroundColor = [UIColor blueColor];
@@ -94,7 +93,7 @@
     [btn2 horizontalTitleAndImage:10];
     
     MYButtonV *btn3 = [MYButtonV buttonWithType:UIButtonTypeCustom];
-    [btn3 setTitle:@"按钮" forState:UIControlStateNormal];
+    [btn3 setTitle:@"按钮4" forState:UIControlStateNormal];
     [btn3 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [btn3 setImage:[UIImage imageNamed:@"seting"] forState:UIControlStateNormal];
     btn3.backgroundColor = [UIColor blueColor];
@@ -103,7 +102,7 @@
     [self.view addSubview:btn3];
     
     ButtonContentRect *btn4 = [ButtonContentRect buttonWithType:UIButtonTypeCustom];
-    [btn4 setTitle:@"按钮" forState:UIControlStateNormal];
+    [btn4 setTitle:@"按钮5" forState:UIControlStateNormal];
     [btn4 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [btn4 setImage:[UIImage imageNamed:@"seting"] forState:UIControlStateNormal];
     btn4.backgroundColor = [UIColor blueColor];

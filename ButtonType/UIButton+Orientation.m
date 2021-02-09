@@ -17,8 +17,8 @@
     CGFloat imgHeight = self.imageView.bounds.size.height;
     CGFloat labWidth = self.titleLabel.bounds.size.width;
     CGFloat labHeight = self.titleLabel.bounds.size.height;
-    [self setImageEdgeInsets:UIEdgeInsetsMake(-labHeight - space, 0, 0, -labWidth)];
     [self setTitleEdgeInsets:UIEdgeInsetsMake(0, -imgWidth, -imgHeight-space, 0)];
+    [self setImageEdgeInsets:UIEdgeInsetsMake(-labHeight - space, 0, 0, -labWidth)];
 }
 
 //图下字上
@@ -28,15 +28,15 @@
     CGFloat imgHeight = self.imageView.bounds.size.height;
     CGFloat labWidth = self.titleLabel.bounds.size.width;
     CGFloat labHeight = self.titleLabel.bounds.size.height;
-    [self setImageEdgeInsets:UIEdgeInsetsMake(labHeight + space, 0, 0, -labWidth)];
     [self setTitleEdgeInsets:UIEdgeInsetsMake(0, -imgWidth, imgHeight + space, 0)];
+    [self setImageEdgeInsets:UIEdgeInsetsMake(labHeight + space, 0, 0, -labWidth)];
 }
 
 //图左字右
 -(void)horizontalImageAndTitle:(CGFloat)spacing {
     CGFloat space = spacing * 0.5;
-    [self setImageEdgeInsets:UIEdgeInsetsMake(0, -space, 0, 0)];
     [self setTitleEdgeInsets:UIEdgeInsetsMake(0, 0, 0, -space)];
+    [self setImageEdgeInsets:UIEdgeInsetsMake(0, -space, 0, 0)];
 
 }
 
@@ -45,8 +45,8 @@
     CGFloat space = spacing * 0.5;
     CGFloat imgWidth = self.imageView.bounds.size.width;
     CGFloat labWidth = self.titleLabel.bounds.size.width;
-    [self setImageEdgeInsets:UIEdgeInsetsMake(0, labWidth, 0, -labWidth - space)];
     [self setTitleEdgeInsets:UIEdgeInsetsMake(0, -imgWidth - space, 0, imgWidth)];
+    [self setImageEdgeInsets:UIEdgeInsetsMake(0, labWidth, 0, -labWidth - space)];
 }
 
 

@@ -37,8 +37,8 @@
         case OrientationType_H_IMG_TEXT:{
             //默认图右字左
             CGFloat space = self.spacing * 0.5;
-            [self setImageEdgeInsets:UIEdgeInsetsMake(0, -space, 0, 0)];
             [self setTitleEdgeInsets:UIEdgeInsetsMake(0, 0, 0, -space)];
+            [self setImageEdgeInsets:UIEdgeInsetsMake(0, -space, 0, 0)];
             break;
         }
         case OrientationType_H_TEXT_IMG: {
@@ -46,8 +46,8 @@
             CGFloat space = self.spacing * 0.5;
             CGFloat imgWidth = self.imageView.bounds.size.width;
             CGFloat labWidth = self.titleLabel.bounds.size.width;
-            [self setImageEdgeInsets:UIEdgeInsetsMake(0, labWidth, 0, -labWidth - space)];
             [self setTitleEdgeInsets:UIEdgeInsetsMake(0, -imgWidth - space, 0, imgWidth)];
+            [self setImageEdgeInsets:UIEdgeInsetsMake(0, labWidth, 0, -labWidth - space)];
             break;
         }
         case OrientationType_V_IMG_TEXT:{
@@ -57,8 +57,8 @@
             CGFloat imgHeight = self.imageView.bounds.size.height;
             CGFloat labWidth = self.titleLabel.bounds.size.width;
             CGFloat labHeight = self.titleLabel.bounds.size.height;
-            [self setImageEdgeInsets:UIEdgeInsetsMake(-labHeight - space, 0, 0, -labWidth)];
             [self setTitleEdgeInsets:UIEdgeInsetsMake(0, -imgWidth, -imgHeight - space, 0)];
+            [self setImageEdgeInsets:UIEdgeInsetsMake(-labHeight - space, 0, 0, -labWidth)];
             break;
         }
         case OrientationType_V_TEXT_IMG:{
@@ -68,8 +68,8 @@
             CGFloat imgHeight = self.imageView.bounds.size.height;
             CGFloat labWidth = self.titleLabel.bounds.size.width;
             CGFloat labHeight = self.titleLabel.bounds.size.height;
-            [self setImageEdgeInsets:UIEdgeInsetsMake(labHeight + space, 0, 0, -labWidth)];
             [self setTitleEdgeInsets:UIEdgeInsetsMake(0, -imgWidth, imgHeight + space, 0)];
+            [self setImageEdgeInsets:UIEdgeInsetsMake(labHeight + space, 0, 0, -labWidth)];
 
             break;
         }
